@@ -1,0 +1,252 @@
+*{
+    font-family: 'Montserrat' , sans-serif;
+}
+
+/*
+Open Popup Button
+Outer Section of Popup
+ */
+
+.in_the_middle{
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn_callback{
+    background-color: #ddd;
+    border: none;
+    color: black;
+    font-size: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.btn_callback:focus{
+    outline: none;
+}
+
+
+.btn_callback span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn_callback span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn_callback:hover span {
+    padding-right: 25px;
+}
+
+.btn_callback:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/*
+Popup Css
+ */
+
+.popup{
+    display: none;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(39, 51, 57, .9);
+    color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    overflow-y: auto;
+}
+
+.popup_close{
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.popup_main{
+    align-items: center;
+    margin: 0 auto;
+    width: 70%;
+    padding-top: 20px;
+}
+
+.popup_main_message{
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #F2F2F3;
+    padding: 16px 24px;
+    max-width: 432px;
+    box-sizing: border-box;
+    margin: 24px auto 30px auto;
+}
+
+.popup_main_logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    max-width: 432px;
+    margin: 24px auto 0 auto;
+}
+
+.popup_main_subheading{
+    display: flex;
+    color: white;
+    font-size: 22px;
+    line-height: 30px;
+    align-items: center;
+    max-width: 432px;
+    margin: 16px auto;
+}
+
+.popup_main_form{
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0 5px 16px 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 432px;
+    padding: 0 24px 24px;
+    position: relative;
+    width: 100%;
+    z-index: 1000000001;
+}
+
+.popup_main_form_input{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.popup_main_form_input label{
+    width: 100%;
+    height: 19px;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 19px;
+    margin-top: 24px;
+}
+
+.popup_main_form_input input{
+    width: 100%;
+    background-color: rgb(203, 248, 240);
+    border-radius: 3px;
+    height: 48px;
+    outline: none;
+    color: rgb(18, 80, 69);
+    font-size: 17px;
+    line-height: 25px;
+    margin-top: 8px;
+    padding: 0 16px;
+    border: 2px solid rgb(203, 248, 240);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 16px 18px;
+    background-position: 98% 50%;
+    cursor: auto;
+}
+
+.popup_main_form_input input:focus{
+    border: solid 2px #4177ff;
+}
+
+.popup_main_already_user{
+    width: 98%;
+    margin: 16px auto 0 auto;
+    font-size: 16px;
+}
+
+.popup_main_already_btn{
+    background: none;
+    display: inline-flex;
+    border: none;
+    padding: 0;
+    font-size: 16px;
+    cursor: pointer;
+    color: #3770ff;
+}
+
+.popup_main_continue{
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    background-color: #3770FF;
+    color: #FFFFFF;
+    padding: 16px 24px;
+    width: 100%;
+    max-width: 432px;
+    margin: 24px auto 5px auto;
+    font-size: 21px;
+    border: none;
+    justify-content: center;
+    line-height: 28px;
+    text-align: center;
+    height: 56px;
+}
+
+.popup_main_form_progress{
+    width: 100%;
+    height: 7px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.popup_main_form_progress_current{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: width 2s; /* Safari prior 6.1 */
+    transition: width 2s;
+    background: #3770FF;
+}
+
+.popup_main_form_input select{
+    width: 100%;
+    background-color: rgb(203, 248, 240);
+    border-radius: 3px;
+    height: 48px;
+    outline: none;
+    color: rgb(18, 80, 69);
+    font-size: 17px;
+    line-height: 25px;
+    margin-top: 8px;
+    padding: 0 16px;
+    border: 2px solid rgb(203, 248, 240);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 16px 18px;
+    background-position: 98% 50%;
+    cursor: auto;
+}
+
+
+.form2{
+    display: none;
+}
