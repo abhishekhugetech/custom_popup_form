@@ -61,15 +61,21 @@
                         </div>
 
                         <div class="popup_main_form_input">
-                            <label for="user_username">Username</label>
+                            <label for="user_name">Name</label>
                             <input type="text" placeholder="UserName"
-                                   id="user_username" name="user_username" required>
+                                   id="user_name" name="user_name" required>
                         </div>
 
                         <div class="popup_main_form_input">
-                            <label for="user_password">Password</label>
-                            <input type="password" placeholder="Password"
-                                   id="user_password" name="user_password" required>
+                            <label for="user_phone">Mobile Number (WhatsApp)</label>
+                            <input type="tel" placeholder="+91 XXXX-XXX-XXX"
+                                   id="user_phone" name="user_phone" required>
+                        </div>
+
+                        <div class="popup_main_form_input">
+                            <label for="user_age">Your Age</label>
+                            <input type="number" placeholder="Enter your age"
+                                   id="user_age" name="user_age" required>
                         </div>
 
                         <div class="popup_main_already_user">
@@ -89,9 +95,13 @@
                         </div>
 
                         <div class="popup_main_form_input">
-                            <label for="user_phone">Mobile Number (WhatsApp)</label>
-                            <input type="tel" placeholder="+91 XXXX-XXX-XXX"
-                                   id="user_phone" name="user_phone" required>
+                            <label for="user_t_shirt">T-Shirt Size</label>
+                            <select id="user_t_shirt">
+                                <option value="s"> S (Small)</option>
+                                <option value="m"> M (Medium)</option>
+                                <option value="l"> L (Large)</option>
+                                <option value="xl"> XL (Extra Large)</option>
+                            </select>
                         </div>
 
                         <div class="popup_main_form_input">
@@ -100,6 +110,53 @@
                                 <option value="veg"> Veg</option>
                                 <option value="non_veg"> Non Veg</option>
                             </select>
+                        </div>
+
+                    </div>
+
+                    <!-- This is the Third Form -->
+                    <div id="form3" class="form3">
+
+                        <div class="payment_img">
+                            <img src="img/coins.svg" alt="Payment">
+                        </div>
+
+                        <div class="form3_heading">
+                            <!-- Change this to Your Message -->
+                            It's time to Invest <br>
+                            in your Future.<hr>
+                            Select your Preferred pack
+                        </div>
+
+                        <div class="form_custom_radio">
+
+                            <div class="inputGroup">
+                                <input id="student" name="payment_method" type="radio" class="radio_input" required/>
+                                <label for="student" class="custom_radio_label">Student - RS. 5,000/-</label>
+                            </div>
+                            <div class="inputGroup">
+                                <input id="teacher" name="payment_method" type="radio" class="radio_input" required/>
+                                <label for="teacher" class="custom_radio_label">Teacher - RS. 5,500/-</label>
+                            </div>
+                            <div class="inputGroup">
+                                <input id="corporate" name="payment_method" type="radio" class="radio_input" required/>
+                                <label for="corporate" class="custom_radio_label">Corporate - RS. 6,000/-</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- This is the Fourth Screen For Showing Payment Success -->
+                    <div id="form4" class="form4">
+
+                        <div>
+                            <img class="form4_img" src="img/thank-you.svg" alt="Thank You">
+                        </div>
+
+                        <div class="form4_heading">
+                            <!-- Change this to Your Message -->
+                            Thank you for registering, <br>
+                            you will receive payment receipt to your email with ID: xyx12345567890
                         </div>
 
                     </div>
